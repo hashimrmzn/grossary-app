@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/all.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="top-heading">
+            <h2>
+                <span><i class="fas fa-shopping-cart"></i></span> Grocery List
+            </h2>
+            <p>Manage your shopping list with ease</p>
+            <h5 class="totall-items-txt">Total items to by: <span class="total-items">0</span> </h5>
+            <div class="container">
+                <h4><span class="total-items"></span> items in your list</h4>
+                <div class="input-items">
+                    <div class="add-input">
+                        <input type="text" name="item" placeholder="Enter item">
+                    </div>
+
+                    <div class="add-btn" id="add-item-btn">
+                        <button>
+                            +
+                        </button>
+                    </div>
+                </div>
+                <div class="all-products">
+                    <div class="single-product">
+                        <p id="product"></p>
+                        <div class="add-min-btn">
+                            <div class="incre">
+                                <button id="icrement-btn">
+                                       +
+                                </button>
+                            </div>
+
+                            <div class="decr">
+                                <button id="decrement-btn">
+                                       +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
