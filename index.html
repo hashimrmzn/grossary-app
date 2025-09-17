@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
 </head>
 
@@ -16,42 +17,58 @@
                 <span><i class="fas fa-shopping-cart"></i></span> Grocery List
             </h2>
             <p>Manage your shopping list with ease</p>
-            <h5 class="totall-items-txt">Total items to by: <span class="total-items">0</span> </h5>
+            <h5 class="totall-items-txt">Total items to buy: <span class="total-items">0</span> </h5>
             <div class="container">
                 <h4><span class="total-items"></span> items in your list</h4>
                 <div class="input-items">
                     <div class="add-input">
-                        <input type="text" name="item" placeholder="Enter item">
+                        <input type="text" name="item" placeholder="Enter item" id="input_product">
                     </div>
 
-                    <div class="add-btn" id="add-item-btn">
+                    <div class="add-btn" id="add-item-btn" onclick="set_items()">
                         <button>
                             +
                         </button>
                     </div>
                 </div>
                 <div class="all-products">
-                    <div class="single-product">
-                        <p id="product"></p>
-                        <div class="add-min-btn">
-                            <div class="incre">
-                                <button id="icrement-btn">
-                                       +
-                                </button>
-                            </div>
+                    <ul>
 
-                            <div class="decr">
-                                <button id="decrement-btn">
-                                       +
-                                </button>
+                        <li>
+                            <div class="single-product">
+                                <div class="decr">
+                                    <button id="decrement-btn">
+                                        -
+                                    </button>
+                                </div>
+                                <div>
+                                    <p id="product">Milk</p>
+                                    <p class="qty-txt">Qty:<span id="product_quantity">1</span></p>
+                                </div>
+
+                                <div class="add-min-btn">
+                                    <div class="remove-item">
+                                        <button id="remove-btn">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="incre">
+                                        <button id="icrement-btn">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
 
     </div>
+
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
