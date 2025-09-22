@@ -25,41 +25,16 @@
                         <input type="text" name="item" placeholder="Enter item" id="input_product">
                     </div>
 
-                    <div class="add-btn" id="add-item-btn" onclick="set_items()">
-                        <button>
-                            +
+                    <div class="add-btn" id="add-item-btn" >
+                        <button  onclick="add_item()">
+                          Add
                         </button>
                     </div>
                 </div>
                 <div class="all-products">
-                    <ul>
+                    <ul id="list_all_products">
 
-                        <li>
-                            <div class="single-product">
-                                <div class="decr">
-                                    <button id="decrement-btn">
-                                        -
-                                    </button>
-                                </div>
-                                <div>
-                                    <p id="product">Milk</p>
-                                    <p class="qty-txt">Qty:<span id="product_quantity">1</span></p>
-                                </div>
-
-                                <div class="add-min-btn">
-                                    <div class="remove-item">
-                                        <button id="remove-btn">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </button>
-                                    </div>
-                                    <div class="incre">
-                                        <button id="icrement-btn">
-                                            +
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                       
                     </ul>
 
                 </div>

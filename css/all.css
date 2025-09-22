@@ -165,7 +165,7 @@ justify-content: space-between;
   box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
 }
 
-#decrement-btn {
+.decrement-btn {
   background-color: #3498db; 
   color: white;
   border: none;
@@ -179,13 +179,13 @@ justify-content: space-between;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-#decrement-btn:hover {
+.decrement-btn:hover {
   background-color: #2980b9; 
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#decrement-btn:active {
+.decrement-btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
