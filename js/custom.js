@@ -56,8 +56,14 @@ function count_total_li() {
 }
 
 function update_totals() {
-  document.querySelectorAll(".total-items").forEach(el => {
+  // total distinct items in list
+  document.querySelectorAll(".total-item").forEach(el => {
     el.textContent = count_total_li();
+  });
+
+  // total quantity across all items
+  document.querySelectorAll(".total-items").forEach(el => {
+    el.textContent = count_total_products();
   });
 }
 
@@ -102,6 +108,7 @@ function increase_item(button) {
   let value = parseInt(qtyEl.textContent) || 0;
   value++;
   qtyEl.textContent = value;
+  update_totals();
   save_list();
 }
 
@@ -113,6 +120,7 @@ function decrease_item(button) {
   if (value > 1) {
     value--;
     qtyEl.textContent = value;
+    update_totals();
     save_list();
   } else {
     alert("Quantity cannot be less than 1");
