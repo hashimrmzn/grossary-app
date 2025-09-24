@@ -56,16 +56,15 @@ function count_total_li() {
 }
 
 function update_totals() {
-  // total distinct items in list
+
   document.querySelectorAll(".total-item").forEach(el => {
     el.textContent = count_total_li();
   });
 
-  // total quantity across all items
-  document.querySelectorAll(".total-items").forEach(el => {
-    el.textContent = count_total_products();
-  });
+
+  document.querySelector(".total-items").textContent=count_total_products();
 }
+
 
 function add_item() {
   const input = document.getElementById("input_product");
